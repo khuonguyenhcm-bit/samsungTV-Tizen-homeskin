@@ -2,6 +2,8 @@
 
 > **Before you start:** this port was pre-built from Samsung's official Tizen documentation and has **never run on a real Samsung TV** (the author doesn't own one). The steps below are Samsung's standard self-signing flow; if something fails, the exact error message is the most valuable thing you can report back.
 
+> ⚠️ **Use at your own risk:** this is community software installed outside the official store. In particular, a **TV firmware upgrade** can remove sideloaded apps, disable Developer Mode, or break the app — think before upgrading, and if the app is gone after an upgrade, reinstall from scratch with this guide.
+
 Unlike the LG version (one command and done), the Samsung version is **more involved because of Samsung's policy**: every app must be **signed with a certificate containing your specific TV's DUID**. The first setup takes ~30–45 minutes; updates after that are quick.
 
 ## 1. Install Tizen Studio on your computer

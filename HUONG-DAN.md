@@ -2,6 +2,8 @@
 
 > **Lưu ý trước khi bắt đầu:** bản này được dựng sẵn theo tài liệu Tizen, **chưa từng chạy trên tivi Samsung thật** (tác giả chưa có máy). Các bước dưới đây là quy trình chuẩn của Samsung cho app Tizen tự ký; nếu gặp lỗi ở bước nào, ghi lại thông báo lỗi — đó là thông tin quý nhất để hoàn thiện bản này.
 
+> ⚠️ **Tự chịu trách nhiệm:** đây là phần mềm cộng đồng cài ngoài kho chính thức. Đặc biệt, **nâng cấp firmware tivi** có thể gỡ app tự cài / tắt Developer Mode / làm app ngừng chạy — cân nhắc kỹ trước khi nâng cấp, và nếu app mất sau khi nâng cấp thì cài lại từ đầu theo hướng dẫn này.
+
 Khác với bản LG (cài 1 lệnh là xong), bản Samsung **rườm rà hơn vì chính sách của Samsung**: mỗi app phải được **ký bằng chứng chỉ chứa mã DUID của chính chiếc tivi** đó. Làm 1 lần đầu thì lâu (~30–45 phút), các lần cập nhật sau nhanh hơn nhiều.
 
 ## 1. Cài Tizen Studio trên máy tính

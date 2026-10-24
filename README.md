@@ -25,6 +25,12 @@
 | Nút Home / Home button | Có mẹo kéo về launcher (home-watch) | **Không thay được** — Home luôn về Smart Hub của Samsung |
 | Ô Settings/Inputs | Có (tiêm thêm) | Chưa có ở bản này |
 
+## ⚠️ Cảnh báo — tự chịu trách nhiệm / Warning — use at your own risk
+
+Đây là phần mềm cộng đồng cài ngoài kho ứng dụng chính thức (sideload) — **bạn tự chịu trách nhiệm khi cài và sử dụng**. Đặc biệt về **nâng cấp firmware của tivi**: bản cập nhật của Samsung có thể gỡ app tự cài, tắt Developer Mode hoặc làm app ngừng hoạt động. Hãy cân nhắc kỹ trước khi nâng cấp firmware; nếu đã nâng cấp mà app mất, cài lại từ đầu theo hướng dẫn trong repo. Tác giả không chịu trách nhiệm cho bất kỳ trục trặc nào phát sinh từ việc cài đặt, sử dụng hay nâng cấp.
+
+This is community software installed outside the official app store (sideloading) — **you install and use it at your own risk**. In particular regarding **TV firmware upgrades**: a Samsung update can remove sideloaded apps, disable Developer Mode, or break the app. Think carefully before upgrading your TV's firmware; if an upgrade removes the app, reinstall from scratch following this repo's guide. The author takes no responsibility for any issues arising from installing, using, or upgrading.
+
 ## Giới hạn của Tizen (đọc trước khi cài) / Tizen limitations (read first)
 
 Bộ này **tự chứa trọn bộ** như bản LG — tải đúng repo này là đủ, không cần repo nào khác. Nhưng nền tảng Tizen có những giới hạn cứng mà không bộ cài nào vượt qua được:
