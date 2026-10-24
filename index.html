@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, initial-scale=1">
+<title>Tizen Home Skin</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="stage">
+    <header id="hud">
+      <div id="clockRow"><span id="clock">--:--</span><span id="ampm"></span></div>
+      <div id="date"></div>
+      <div id="weather"><svg id="weatherIcon" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span id="weatherText"></span></div>
+    </header>
+    <div id="rowWrap"><div id="tiles"></div></div>
+    <div id="toast"></div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

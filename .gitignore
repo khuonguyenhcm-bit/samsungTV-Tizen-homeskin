@@ -1,0 +1,5 @@
+*.wgt
+.buildResult/
+.sign/
+.tproject
+.DS_Store

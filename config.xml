@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://khuong.cloud/tizen-homeskin" version="1.0.0" viewmodes="maximized">
+  <tizen:application id="KhuongHome.TizenSkin" package="KhuongHome" required_version="4.0"/>
+  <content src="index.html"/>
+  <access origin="*" subdomains="true"/>
+  <icon src="icon.png"/>
+  <name>Tizen Home Skin</name>
+  <description>Wallpaper home screen with a big clock, weather and one row of square app tiles — a port of the LG webOS home skin (LGtv-Webos-homeskin).</description>
+  <tizen:privilege name="http://tizen.org/privilege/application.info"/>
+  <tizen:privilege name="http://tizen.org/privilege/applaunch"/>
+  <tizen:profile name="tv"/>
+  <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="internal-only" hwkey-event="enable"/>
+</widget>
