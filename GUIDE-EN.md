@@ -58,6 +58,8 @@ On the TV, **Tizen Home Skin** appears in your Apps list. On first launch it lis
 
 ## 7. Customising (in `js/config.js`)
 
+> **Note:** the LG original gained an on-TV Settings screen plus a phone settings page (26 Oct update). This Samsung port does not have it yet — customisation still happens in `js/config.js`, below.
+
 - **Front-of-row order:** `orderNames` — matched against app names (case-insensitive substring). Default: YouTube, Apple Music, Netflix, Apple TV; the rest is alphabetical.
 - **Hide apps:** `hiddenNames` — partial names are fine. The launcher hides itself automatically.
 - **Sharp icons:** drop a square 1024×1024 PNG into `icons/` and map it in `iconMap` by app name. Apps without a bundled icon use the system icon Tizen reports (usually small and soft — hence the `icons/` folder).

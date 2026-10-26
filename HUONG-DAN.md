@@ -58,6 +58,8 @@ Mở app trên tivi: app **Tizen Home Skin** xuất hiện trong danh sách Apps
 
 ## 7. Tuỳ biến (trong `js/config.js`)
 
+> **Lưu ý:** bản LG (bản gốc) đã có thêm màn hình Settings chỉnh ngay trên tivi + trang chỉnh bằng điện thoại (cập nhật 26/10). Bản Samsung này chưa có — các tuỳ biến vẫn sửa trong `js/config.js` như bên dưới.
+
 - **Thứ tự đầu hàng:** `orderNames` — khớp theo tên app (không phân biệt hoa thường, khớp một phần). Mặc định: YouTube, Apple Music, Netflix, Apple TV; phần còn lại xếp theo bảng chữ cái.
 - **Ẩn app:** `hiddenNames` — thêm tên (một phần cũng được). Launcher tự ẩn chính nó.
 - **Icon nét:** thả PNG vuông 1024×1024 vào `icons/` và khai báo trong `iconMap` theo tên app. App không có icon riêng sẽ dùng icon hệ thống Tizen trả về (thường nhỏ, hơi mờ — đó là lý do có thư mục `icons/`).
