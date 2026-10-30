@@ -11,9 +11,9 @@
 
 ## ⚠️ Trạng thái / Status
 
-**Bản dựng trước, CHƯA kiểm chứng trên tivi Samsung thật** (tác giả chưa có máy Samsung). Code viết theo tài liệu Tizen chính thức, cú pháp đã kiểm tra, nhưng lần cài đầu tiên lên máy thật có thể cần chỉnh sửa nhỏ. Nếu bạn cài thử, rất mong nhận phản hồi/PR.
+**Đã kiểm chứng trên máy thật** — Samsung The Freestyle đời 1 (2022, Tizen 6.5), cài và chạy ổn từ 2026-10-29: hàng đáy mỗi app một ô + ô All Apps mở danh sách app đầy đủ. Các giới hạn Tizen ở mục dưới vẫn đúng nguyên (Home luôn về Smart Hub, chưa có ô Settings/Inputs). Báo lỗi/PR vẫn rất hoan nghênh.
 
-**Pre-built port, NOT yet tested on a real Samsung TV** (the author doesn't own one). Written against the official Tizen docs and syntax-checked, but the first install on real hardware may need small fixes. Test reports and PRs are very welcome.
+**Tested on real hardware** — Samsung The Freestyle Gen 1 (2022, Tizen 6.5), installed and running since 2026-10-29: one tile per app in the bottom row plus an All Apps tile. The Tizen limitations below still apply in full (Home always opens Smart Hub, no Settings/Inputs tiles yet). Test reports and PRs are still very welcome.
 
 ## Khác gì so với bản LG / How it differs from the LG version
 
@@ -50,9 +50,9 @@ This repo is **fully self-contained** like the LG version — this download is a
 
 ## Cài đặt / Install
 
-Đọc **[HUONG-DAN.md](HUONG-DAN.md)** (tiếng Việt) hoặc **[GUIDE-EN.md](GUIDE-EN.md)** (English). Tóm tắt: cài Tizen Studio → bật Developer Mode trên tivi (Apps → bấm `12345` → nhập IP máy tính) → tạo chứng chỉ chứa DUID của tivi → `tizen build-web` + `tizen package -t wgt` + `tizen install`.
+Đọc **[HUONG-DAN.md](HUONG-DAN.md)** (tiếng Việt) hoặc **[GUIDE-EN.md](GUIDE-EN.md)** (English). Tóm tắt: cài Tizen Studio → bật Developer Mode trên tivi (Apps → bấm `12345` → nhập IP máy tính; remote không có phím số như của The Freestyle: Apps → kéo xuống cuối → App Settings → nhập `12345` tại đó) → tạo chứng chỉ chứa DUID của tivi → `tizen build-web` + `tizen package -t wgt` + `tizen install`.
 
-Short version: install Tizen Studio → enable Developer Mode on the TV (Apps → press `12345` → enter your computer's IP) → create a certificate containing your TV's DUID → `tizen build-web` + `tizen package -t wgt` + `tizen install`.
+Short version: install Tizen Studio → enable Developer Mode on the TV (Apps → press `12345` → enter your computer's IP; on remotes without a number pad, e.g. The Freestyle: Apps → scroll to the bottom → App Settings → enter `12345` there) → create a certificate containing your TV's DUID → `tizen build-web` + `tizen package -t wgt` + `tizen install`.
 
 ## Tuỳ biến / Customising
 

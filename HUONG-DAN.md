@@ -23,10 +23,14 @@ Khác với bản LG (cài 1 lệnh là xong), bản Samsung **rườm rà hơn 
 
 *Mỗi tivi chỉ gắn với 1 máy tính tại một thời điểm — đổi máy tính phải làm lại bước này.*
 
+**Remote không có phím số (như remote SolarCell của The Freestyle):** bấm số sẽ không mở được hộp thoại — thay vào đó vào **Apps → kéo xuống cuối cùng → App Settings** rồi nhập `12345` vào ô ở đó (bàn phím số hiện trên màn hình), xong làm tiếp từ bước 3. Đã kiểm chứng trên The Freestyle đời 1 (2022, Tizen 6.5).
+
 ## 3. Kết nối máy tính với tivi
 
 1. Trong Tizen Studio mở **Device Manager** → **Remote Device Manager** → Scan — tivi xuất hiện trong danh sách (cùng mạng Wi-Fi).
 2. Bật công tắc **Connection** của tivi đó sang On. Kết nối thành công là điều kiện để bước sau tự lấy được DUID.
+
+*Nếu vừa bật Developer Mode mà máy tính kết nối không được (cổng sdb 26101 chưa mở), hãy tắt nguồn hẳn kiểu rút điện rồi cắm lại, sau đó kết nối lại. Trên chiếc Freestyle đem test, cổng chỉ mở sau cú khởi động lạnh đó.*
 
 ## 4. Tạo chứng chỉ (bước bắt buộc của Samsung)
 
@@ -47,6 +51,8 @@ tizen build-web
 tizen package -t wgt -s <tên profile chứng chỉ của bạn>
 tizen install -n <file .wgt vừa tạo> -t <tên tivi trong Device Manager>
 ```
+
+⚠️ **Tên file .wgt KHÔNG được có khoảng trắng** — file tên `Tizen Home Skin.wgt` bị máy test từ chối cài, còn đúng bản đó đổi tên thành `skin.wgt` thì cài trót lọt. Tên project có khoảng trắng thì đổi tên file trước khi chạy `tizen install`.
 
 Mở app trên tivi: app **Tizen Home Skin** xuất hiện trong danh sách Apps. Lần mở đầu, app tự liệt kê các app đã cài trên tivi và xếp theo cấu hình.
 

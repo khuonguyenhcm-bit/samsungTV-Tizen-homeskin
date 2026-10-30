@@ -23,10 +23,14 @@ Unlike the LG version (one command and done), the Samsung version is **more invo
 
 *A TV pairs with only one computer at a time — switching computers means redoing this step.*
 
+**Remote without a number pad (e.g. The Freestyle's SolarCell remote):** pressing digits won't open the dialog — instead open **Apps → scroll to the very bottom → App Settings** and enter `12345` in the field there (an on-screen keypad appears), then continue from step 3. Verified on The Freestyle Gen 1 (2022, Tizen 6.5).
+
 ## 3. Connect the computer to the TV
 
 1. In Tizen Studio open **Device Manager** → **Remote Device Manager** → Scan — your TV appears (same Wi-Fi network required).
 2. Flip its **Connection** switch to On. A working connection is what lets the next step fetch the TV's DUID automatically.
+
+*If the TV refuses the connection (sdb port 26101 stays closed) right after enabling Developer Mode, do a full power-cycle — unplug the TV/projector, plug it back in, then connect again. On the test Freestyle the port only opened after that cold boot.*
 
 ## 4. Create the certificate (Samsung's mandatory step)
 
@@ -47,6 +51,8 @@ tizen build-web
 tizen package -t wgt -s <your certificate profile name>
 tizen install -n <the .wgt file just created> -t <TV name from Device Manager>
 ```
+
+⚠️ **The .wgt filename must contain NO spaces** — a file named `Tizen Home Skin.wgt` was refused on the test device, while the same build renamed to `skin.wgt` installed fine. Rename the file before running `tizen install` if your project name has spaces.
 
 On the TV, **Tizen Home Skin** appears in your Apps list. On first launch it lists the TV's installed apps itself and orders them per the config.
 
